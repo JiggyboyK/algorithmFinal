@@ -1,21 +1,17 @@
 let sentence = 'Wizkid o2 arena show was lit'
 let vowels = 'aeiou'
 function sentenceReader(sentence){
-    console.log(`The length of the sentence is ${sentence.length}`);
-    console.log(`The number of the word in the sentence is ${sentence.split(' ').length}`)
-}
 
-function vowel(sentence){
     // return sentence.match(/[aeiou]/gi)?sentence.match(/[aeiou]/gi).length:0
     if (sentence.match(/[aeiou]/gi)){
-        return (sentence.match(/[aeiou]/gi).length);
+        return `The length of the sentence is ${sentence.length},The number of the word in the sentence is ${sentence.split(' ').length}, The vowels is ${sentence.match(/[aeiou]/gi).length}`;
     }
     else {
         return 0;
     }
 }
 
-console.log(vowel(sentence))
+console.log(sentenceReader(sentence))
 // sentenceReader(sentence)
 
 // write a search procedure (C,STR,VARFIND, VARPOS) which searches for a character C in a string STR , and returns its postion if it exists. FIND will be true is the element exists 
